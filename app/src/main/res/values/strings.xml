@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pyramid of Need</string>
+
+
+    <!-- TODO: Remove or change this placeholder text
+     Need Trace, Pocket Needs
+     -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

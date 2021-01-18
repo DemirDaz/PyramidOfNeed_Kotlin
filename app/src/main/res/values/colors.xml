@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2F2F2F</color>
+    <color name="colorPrimary">#2E2E2E</color>
     <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#B8336A</color>
+    <color name="colorAccent">#A61626</color>
     <color name="accent2">#F6F930</color>
+    <color name="accent3">#BABABA</color>
 
 
+
+    <color name="red">#B50000</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="green">#4CAF50</color>
     //Transparent colors
+    <color name="white">#FFFFFF</color>
+    <color name="silver">#B3B3B3</color>
+     //bb0a1e blood red
     <color name="trans_green">#89FF97BA</color>
     <color name="darker">#843E3E3E</color>
     <color name="some">#89FF97BA</color>
     <color name="trans_yellow">#84E2FF03</color>
-    <color name="trans_pink">#DCDCDC</color>
+    <color name="trans_pink">#C1C1C1</color>
     <color name="trans_white">#97FCFCFC</color>
+    <color name="trans_gray">#97FFF6F6</color>
 
 </resources>

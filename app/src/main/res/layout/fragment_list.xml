@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-
+    android:layout_gravity="center"
+    android:gravity="left"
     android:orientation="vertical"
     tools:context=".Fragments.ListFragment">
 
@@ -18,129 +19,101 @@
         android:textColor="@android:color/black"
         android:textSize="40sp" />-->
 
+    <TextView
+        android:id="@+id/printhere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your fullfiled needs: "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:gravity="center"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottiesucc"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="0dp"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="success.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-
+        android:id="@+id/verLayout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="10dp"
+
         android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
 
-        android:orientation="vertical">
-
-        <TextView
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select your fullfiled needs: "
-            android:textAlignment="center"
-            android:textColor="@color/colorAccent"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:src="@drawable/ic_add_white" />
 
-        <CheckBox
-            android:layout_marginTop="30dp"
-            android:id="@+id/androidCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:checked="false"
-            android:padding="20dp"
-            android:text="Slept 2 hours"
-            android:buttonTint="@color/trans_white"
-            android:textColor="@color/trans_white"
-            android:textSize="20sp"
-            android:textStyle="bold|italic" />
 
-        <CheckBox
-            android:id="@+id/javaCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:checked="false"
-            android:padding="20dp"
-            android:text="Had breakfast."
-            android:buttonTint="@color/trans_white"
-            android:textColor="@color/trans_white"
-            android:textSize="20sp"
-            android:textStyle="bold|italic" />
 
-        <CheckBox
-            android:id="@+id/phpCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:checked="false"
-            android:padding="20dp"
-            android:text="Excretion"
-            android:buttonTint="@color/trans_white"
-            android:textColor="@color/trans_white"
-            android:textSize="20sp"
-            android:textStyle="bold|italic" />
+    </LinearLayout>
 
-        <CheckBox
-            android:id="@+id/pythonCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:checked="false"
-            android:padding="20dp"
-            android:text="Fresh air."
-            android:buttonTint="@color/trans_white"
-            android:textColor="@color/trans_white"
-            android:textSize="20sp"
-            android:textStyle="bold|italic" />
 
-        <CheckBox
-            android:id="@+id/unityCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:checked="false"
-            android:padding="20dp"
-            android:text="Drank liter of water."
-            android:buttonTint="@color/trans_white"
-            android:textColor="@color/trans_white"
-            android:textSize="20sp"
-            android:textStyle="bold|italic" />
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="fill_parent"
+
+        android:layout_height="500dp"
+
+        android:layout_alignStart="@+id/verLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="150dp"
+        android:paddingTop="70dp">
 
         <LinearLayout
-            android:id="@+id/verLayout"
-            android:layout_width="fill_parent"
+            android:id="@+id/linearLayout"
+
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:gravity="right"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
 
-            android:orientation="horizontal"
-            android:layout_marginBottom="10dp">
+            android:paddingTop="30dp">
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton2"
+            <!--
+            <CheckBox
+                android:id="@+id/androidCheckBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginRight="20dp"
-                android:clickable="true"
-                android:src="@drawable/ic_add_white"
-                android:layout_marginBottom="20dp"
-                />
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:buttonTint="@color/trans_white"
+                android:checked="false"
+                android:padding="20dp"
+                android:text="Slept 2 hours"
+                android:textColor="@color/trans_white"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+                -->
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginRight="20dp"
-                android:backgroundTint="@android:color/background_dark"
-                android:backgroundTintMode="src_over"
-                android:clickable="false"
-                android:layout_marginBottom="20dp"
-                android:src="@drawable/ic_navigate_next_white"
-
-                />
 
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
 
 </RelativeLayout>

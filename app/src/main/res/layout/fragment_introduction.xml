@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.introduction">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <TextView
+        android:id="@+id/basic_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Nesto"
+        android:paddingTop="330dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+       android:textAlignment="center"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="pyramid.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+
+
+
+
+
+
+
+</FrameLayout>

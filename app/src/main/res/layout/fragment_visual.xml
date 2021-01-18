@@ -9,19 +9,30 @@
     tools:context=".Fragments.VisualFragment">
 
     <!-- TODO: Update blank fragment layout
-     <TextView
+<TextView
+        android:id="@+id/ovde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="@color/colorAccent"
         android:textSize="40sp"
-        android:text="Visual"
+        android:text="Visual"/>
         />-->
 
 
+
+
+
+
     <ImageView
+        android:id="@+id/piramida"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/inactive" />
+        android:visibility="invisible"
+        android:src="@drawable/inactive"
+        android:tag="inactive"
+        />
+
+
 
 </RelativeLayout>

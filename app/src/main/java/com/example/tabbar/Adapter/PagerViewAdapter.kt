@@ -10,15 +10,16 @@ internal class PagerViewAdapter(fm: FragmentManager?) :
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> {
-                CalendarFragment()
+                ListFragment()
+
             }
             1 -> {
                 VisualFragment()
             }
             2 -> {
-                ListFragment()
+                CalendarFragment()
             }
-            else -> CalendarFragment()
+            else -> VisualFragment()
         }
     }
 

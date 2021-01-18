@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/trans_pink"
 
     tools:context=".Fragments.CalendarFragment">
@@ -14,44 +15,73 @@
 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:gravity="center_horizontal"
 
         android:orientation="vertical">
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:focusedMonthDateColor="#B8336A" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusedMonthDateColor="#B8336A" />
 
         <TextView
+            android:id="@+id/fullfilment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fullfiled:  10%"
-            android:gravity="left"
+            android:text="Fullfiled:"
+            android:gravity="center"
             android:layout_marginLeft="10dp"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"
             android:textStyle="bold" />
         <TextView
+            android:id="@+id/problematic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Problematic need:  food"
-            android:gravity="left"
+            android:text="Problematic need:"
+            android:gravity="center"
             android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"
             android:textStyle="bold" />
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medal:  Trophy"
-            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
+        <TextView
+            android:id="@+id/trophy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medal:"
+            android:gravity="center"
             android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
             android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:layout_gravity="center"
             android:textSize="20sp"
             android:textStyle="bold" />
 
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottiecal"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="0dp"
+                android:visibility="gone"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="bronze.json"
+                app:lottie_loop="true"
+                app:lottie_speed="1" />
+        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>

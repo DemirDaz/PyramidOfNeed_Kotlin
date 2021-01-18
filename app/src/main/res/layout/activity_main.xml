@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
     <LinearLayout
         android:id="@+id/lin"
         android:layout_width="match_parent"
@@ -25,13 +27,17 @@
         >
 
 
+
+
+
+
         <ImageButton
-            android:id="@+id/calendarBtn"
+            android:id="@+id/homeBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="15dp"
-            android:src="@drawable/ic_timeline_black"
+            android:src="@drawable/ic_list_check_black"
             android:background="@android:color/white"
 
             />
@@ -48,12 +54,12 @@
             />
 
         <ImageButton
-            android:id="@+id/homeBtn"
+            android:id="@+id/calendarBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="15dp"
-            android:src="@drawable/ic_list_check_black"
+            android:src="@drawable/ic_timeline_black"
             android:background="@android:color/white"
 
             />
